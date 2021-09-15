@@ -1,5 +1,5 @@
-PR_TITLE_REGEX: [a-zA-Z0-9]{3,6}-[0-9]{3,}
-COMMIT_MESSAGE_REGEX: (feat:.*|fix:.*|breaking change:.*)
+PR_TITLE_REGEX: /((?:[a-z][a-z]+))(\d{3})(:)([a-z0-9])/i
+COMMIT_MESSAGE_REGEX: /(#)(#)((?:[a-z][a-z]+))(\d{3})(:)([a-z0-9])/i
 OUTPUT_TITLE_FAIL: Message validation failed!!!
 OUTPUT_TITLE_SUCCESS: Message validation passed!!!
 VALID_COMMIT_MESSAGE: Commit messages are valid
